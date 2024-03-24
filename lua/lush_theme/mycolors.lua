@@ -123,7 +123,7 @@ local theme = lush(function(injected_functions)
     -- TabLineFill    { }, -- Tab pages line, where there are no labels
     -- TabLineSel     { }, -- Tab pages line, active tab page label
     -- Title          { }, -- Titles for output from ":set all", ":autocmd" etc.
-    Visual         {fg = hsl('#00ff00'), bg = hsl('#ff00ff')}, -- Visual mode selection
+    Visual         {fg = hsl('#000000'), bg = hsl('#ff00ff')}, -- Visual mode selection
     -- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
     -- WarningMsg     { }, -- Warning messages
     -- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
@@ -241,13 +241,13 @@ local theme = lush(function(injected_functions)
     --
     -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
 
-    sym"@text.literal"      {fg = hsl('#b0b0b0')}, -- Comment
+    sym"@text.literal"      {fg = hsl('#a0a0a0')}, -- Comment
     sym"@text.reference"    {fg = hsl('#00b0ff')}, -- Identifier
     -- sym"@text.title"        { }, -- Title
     -- sym"@text.uri"          { }, -- Underlined
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
-    sym"@comment"           {fg = hsl('#b0ffb0')}, -- Comment
+    sym"@comment"           {fg = hsl('#a0a0a0')}, -- Comment
     sym"@punctuation"       {fg = hsl('#ff0000')}, -- Delimiter
     sym"@constant"          {fg = hsl('#ff00ff')}, -- Constant
     sym"@constant.builtin"  {fg = hsl('#ff0000')}, -- Special
@@ -269,7 +269,7 @@ local theme = lush(function(injected_functions)
     sym"@method"            {fg = hsl('#f0f0f0')}, -- Function
     sym"@field"             {fg = hsl('#00b0ff')}, -- Identifier
     sym"@property"          {fg = hsl('#00b0ff')}, -- Identifier
-    sym"@constructor"       {fg = hsl('#ff00ff')}, -- Special
+    sym"@constructor"       {fg = hsl('#ffff00')}, -- Special
     sym"@conditional"       {fg = hsl('#ff00ff')}, -- Conditional
     sym"@repeat"            {fg = hsl('#ffff00')}, -- Repeat
     sym"@label"             {fg = hsl('#ffff00')}, -- Label

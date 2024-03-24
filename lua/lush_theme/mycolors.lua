@@ -247,20 +247,20 @@ local theme = lush(function(injected_functions)
     -- sym"@text.uri"          { }, -- Underlined
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
-    sym"@comment"           {fg = hsl('#b0b0b0')}, -- Comment
+    sym"@comment"           {fg = hsl('#b0ffb0')}, -- Comment
     sym"@punctuation"       {fg = hsl('#ff0000')}, -- Delimiter
     sym"@constant"          {fg = hsl('#ff00ff')}, -- Constant
     sym"@constant.builtin"  {fg = hsl('#ff0000')}, -- Special
     sym"@constant.macro"    {fg = hsl('#ff0000')}, -- Define
     sym"@define"            {fg = hsl('#ff0000')}, -- Define
     sym"@macro"             {fg = hsl('#ff0000')}, -- Macro
-    sym"@string"            {fg = hsl('#b0b0ff')}, -- String
+    sym"@string"            {fg = hsl('#9090ff')}, -- String
     sym"@string.escape"     {fg = hsl('#ff0000')}, -- SpecialChar
     sym"@string.special"    {fg = hsl('#ffa500')}, -- SpecialChar
     sym"@character"         {fg = hsl('#f0f0f0')}, -- Character
     sym"@character.special" {fg = hsl('#ffa500') }, -- SpecialChar
     sym"@number"            {fg = hsl('#f0f0f0')}, -- Number
-    sym"@boolean"           {fg = hsl('#f0f0f0'), gui = 'italic'}, -- Boolean
+    sym"@boolean"           {fg = hsl('#0000ff'), gui = 'italic'}, -- Boolean
     sym"@float"             {fg = hsl('#f0f0f0')}, -- Float
     sym"@function"          {fg = hsl('#00b0ff')}, -- Function
     sym"@function.builtin"  {fg = hsl('#ff0000')}, -- Special

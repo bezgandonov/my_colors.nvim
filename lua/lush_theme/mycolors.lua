@@ -260,12 +260,12 @@ local theme = lush(function(injected_functions)
     sym"@character"         {fg = hsl('#f0f0f0')}, -- Character
     sym"@character.special" {fg = hsl('#ffa500') }, -- SpecialChar
     sym"@number"            {fg = hsl('#f0f0f0')}, -- Number
-    sym"@boolean"           {fg = hsl('#0000ff'), gui = 'italic'}, -- Boolean
+    sym"@boolean"           {fg = hsl('#00ffff'), gui = 'italic'}, -- Boolean
     sym"@float"             {fg = hsl('#f0f0f0')}, -- Float
     sym"@function"          {fg = hsl('#00b0ff')}, -- Function
     sym"@function.builtin"  {fg = hsl('#ff0000')}, -- Special
     sym"@function.macro"    {fg = hsl('#ff0000')}, -- Macro
-    sym"@parameter"         {fg = hsl('#0000ff')}, -- Identifier
+    sym"@parameter"         {fg = hsl('#00ffff')}, -- Identifier
     sym"@method"            {fg = hsl('#f0f0f0')}, -- Function
     sym"@field"             {fg = hsl('#00b0ff')}, -- Identifier
     sym"@property"          {fg = hsl('#00b0ff')}, -- Identifier

@@ -242,7 +242,7 @@ local theme = lush(function(injected_functions)
     -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
 
     sym"@text.literal"      {fg = hsl('#a0a0a0')}, -- Comment
-    sym"@text.reference"    {fg = hsl('#00b0ff')}, -- Identifier
+    sym"@text.reference"    {fg = hsl('#00abff')}, -- Identifier
     -- sym"@text.title"        { }, -- Title
     -- sym"@text.uri"          { }, -- Underlined
     -- sym"@text.underline"    { }, -- Underlined
@@ -256,19 +256,19 @@ local theme = lush(function(injected_functions)
     sym"@macro"             {fg = hsl('#ff0000')}, -- Macro
     sym"@string"            {fg = hsl('#9090ff')}, -- String
     sym"@string.escape"     {fg = hsl('#ff0000')}, -- SpecialChar
-    sym"@string.special"    {fg = hsl('#ffa500')}, -- SpecialChar
+    sym"@string.special"    {fg = hsl('#ffab00')}, -- SpecialChar
     sym"@character"         {fg = hsl('#f0f0f0')}, -- Character
-    sym"@character.special" {fg = hsl('#ffa500') }, -- SpecialChar
+    sym"@character.special" {fg = hsl('#ffab00') }, -- SpecialChar
     sym"@number"            {fg = hsl('#f0f0f0')}, -- Number
     sym"@boolean"           {fg = hsl('#00ffff'), gui = 'italic'}, -- Boolean
     sym"@float"             {fg = hsl('#f0f0f0')}, -- Float
-    sym"@function"          {fg = hsl('#00b0ff')}, -- Function
+    sym"@function"          {fg = hsl('#00abff')}, -- Function
     sym"@function.builtin"  {fg = hsl('#ff0000')}, -- Special
     sym"@function.macro"    {fg = hsl('#ff0000')}, -- Macro
     sym"@parameter"         {fg = hsl('#00ffff')}, -- Identifier
     sym"@method"            {fg = hsl('#f0f0f0')}, -- Function
-    sym"@field"             {fg = hsl('#00b0ff')}, -- Identifier
-    sym"@property"          {fg = hsl('#00b0ff')}, -- Identifier
+    sym"@field"             {fg = hsl('#00abff')}, -- Identifier
+    sym"@property"          {fg = hsl('#00abff')}, -- Identifier
     sym"@constructor"       {fg = hsl('#ffff00')}, -- Special
     sym"@conditional"       {fg = hsl('#ff00ff')}, -- Conditional
     sym"@repeat"            {fg = hsl('#ffff00')}, -- Repeat
@@ -281,11 +281,11 @@ local theme = lush(function(injected_functions)
     sym"@type.definition"   {fg = hsl('#00ff00')}, -- Typedef
     sym"@storageclass"      {fg = hsl('#00ff00')}, -- StorageClass
     -- sym"@structure"         { }, -- Structure
-    sym"@namespace"         {fg = hsl('#00b0ff')}, -- Identifier
+    sym"@namespace"         {fg = hsl('#00abff')}, -- Identifier
     sym"@include"           {fg = hsl('#ff0000')}, -- Include
     sym"@preproc"           {fg = hsl('#ff0000')}, -- PreProc
-    sym"@debug"             {fg = hsl('#ffa500')}, -- Debug
-    sym"@tag"               {fg = hsl('#ffa500')}, -- Tag
+    sym"@debug"             {fg = hsl('#ffab00')}, -- Debug
+    sym"@tag"               {fg = hsl('#ffab00')}, -- Tag
 }
 end)
 

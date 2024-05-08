@@ -256,7 +256,7 @@ local theme = lush(function(injected_functions)
     sym"@macro"             {fg = hsl('#ff0000')}, -- Macro
     sym"@string"            {fg = hsl('#9090ff')}, -- String
     sym"@string.escape"     {fg = hsl('#ff0000')}, -- SpecialChar
-    sym"@string.special"    {fg = hsl('#ffab00')}, -- SpecialChar
+    sym"@string.special"    {fg = hsl('#9090ff')}, -- SpecialChar
     sym"@character"         {fg = hsl('#f0f0f0')}, -- Character
     sym"@character.special" {fg = hsl('#ffab00') }, -- SpecialChar
     sym"@number"            {fg = hsl('#f0f0f0')}, -- Number
@@ -285,7 +285,7 @@ local theme = lush(function(injected_functions)
     sym"@include"           {fg = hsl('#ff0000')}, -- Include
     sym"@preproc"           {fg = hsl('#ff0000')}, -- PreProc
     sym"@debug"             {fg = hsl('#ffab00')}, -- Debug
-    sym"@tag"               {fg = hsl('#ffab00')}, -- Tag
+    sym"@tag"               {fg = hsl('#00abff')}, -- Tag
 }
 end)
 

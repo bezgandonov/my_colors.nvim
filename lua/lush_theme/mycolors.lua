@@ -69,12 +69,12 @@ local theme = lush(function(injected_functions)
     -- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
     -- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     -- CursorLine     { }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
-    Directory      {fg = hsl('#ff0000')}, -- Directory names (and other special names in listings)
+    Directory      {fg = hsl('#cd0000')}, -- Directory names (and other special names in listings)
     -- DiffAdd        { }, -- Diff mode: Added line |diff.txt|
     -- DiffChange     { }, -- Diff mode: Changed line |diff.txt|
     -- DiffDelete     { }, -- Diff mode: Deleted line |diff.txt|
     -- DiffText       { }, -- Diff mode: Changed text within a changed line |diff.txt|
-    EndOfBuffer    {fg = hsl('#0000ff') }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
+    EndOfBuffer    {fg = hsl('#0000cd') }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
     -- TermCursor     { }, -- Cursor in a focused terminal
     -- TermCursorNC   { }, -- Cursor in an unfocused terminal
     -- ErrorMsg       { }, -- Error messages on the command line
@@ -101,12 +101,12 @@ local theme = lush(function(injected_functions)
     -- FloatBorder    { }, -- Border of floating windows.
     -- FloatTitle     { }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows
-    Pmenu          {bg = hsl('#ff00ff'), fg = hsl('#b0b0b0')}, -- Popup menu: Normal item.
-    PmenuSel       {bg = hsl('#b0b0b0'), fg = hsl('#ff00ff')}, -- Popup menu: Selected item.
-    PmenuKind      {bg = hsl('#ff00ff'), fg = hsl('#b0b0b0')}, -- Popup menu: Normal item "kind"
-    PmenuKindSel   {bg = hsl('#b0b0b0'), fg = hsl('#ff00ff')}, -- Popup menu: Selected item "kind"
-    PmenuExtra     {bg = hsl('#ff00ff'), fg = hsl('#b0b0b0')}, -- Popup menu: Normal item "extra text"
-    PmenuExtraSel  {bg = hsl('#b0b0b0'), fg = hsl('#ff00ff')}, -- Popup menu: Selected item "extra text"
+    Pmenu          {bg = hsl('#cd00cd'), fg = hsl('#e5e5e5')}, -- Popup menu: Normal item.
+    PmenuSel       {bg = hsl('#e5e5e5'), fg = hsl('#cd00cd')}, -- Popup menu: Selected item.
+    PmenuKind      {bg = hsl('#cd00cd'), fg = hsl('#e5e5e5')}, -- Popup menu: Normal item "kind"
+    PmenuKindSel   {bg = hsl('#e5e5e5'), fg = hsl('#cd00cd')}, -- Popup menu: Selected item "kind"
+    PmenuExtra     {bg = hsl('#cd00cd'), fg = hsl('#e5e5e5')}, -- Popup menu: Normal item "extra text"
+    PmenuExtraSel  {bg = hsl('#e5e5e5'), fg = hsl('#cd00cd')}, -- Popup menu: Selected item "extra text"
     -- PmenuSbar      { }, -- Popup menu: Scrollbar.
     -- PmenuThumb     { }, -- Popup menu: Thumb of the scrollbar.
     -- Question       { }, -- |hit-enter| prompt and yes/no questions
@@ -123,7 +123,7 @@ local theme = lush(function(injected_functions)
     -- TabLineFill    { }, -- Tab pages line, where there are no labels
     -- TabLineSel     { }, -- Tab pages line, active tab page label
     -- Title          { }, -- Titles for output from ":set all", ":autocmd" etc.
-    Visual         {fg = hsl('#000000'), bg = hsl('#ff00ff')}, -- Visual mode selection
+    Visual         {fg = hsl('#000000'), bg = hsl('#cd00cd')}, -- Visual mode selection
     -- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
     -- WarningMsg     { }, -- Warning messages
     -- Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
@@ -242,50 +242,50 @@ local theme = lush(function(injected_functions)
     -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
 
     sym"@text.literal"      {fg = hsl('#a0a0a0')}, -- Comment
-    sym"@text.reference"    {fg = hsl('#00abff')}, -- Identifier
+    sym"@text.reference"    {fg = hsl('#00cdcd')}, -- Identifier
     -- sym"@text.title"        { }, -- Title
     -- sym"@text.uri"          { }, -- Underlined
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
     sym"@comment"           {fg = hsl('#a0a0a0')}, -- Comment
-    sym"@punctuation"       {fg = hsl('#ff0000')}, -- Delimiter
-    sym"@constant"          {fg = hsl('#ff00ff')}, -- Constant
-    sym"@constant.builtin"  {fg = hsl('#ff0000')}, -- Special
-    sym"@constant.macro"    {fg = hsl('#ff0000')}, -- Define
-    sym"@define"            {fg = hsl('#ff0000')}, -- Define
-    sym"@macro"             {fg = hsl('#ff0000')}, -- Macro
-    sym"@string"            {fg = hsl('#9090ff')}, -- String
-    sym"@string.escape"     {fg = hsl('#ff0000')}, -- SpecialChar
-    sym"@string.special"    {fg = hsl('#9090ff')}, -- SpecialChar
-    sym"@character"         {fg = hsl('#f0f0f0')}, -- Character
-    sym"@character.special" {fg = hsl('#ffab00') }, -- SpecialChar
-    sym"@number"            {fg = hsl('#f0f0f0')}, -- Number
-    sym"@boolean"           {fg = hsl('#00ffff'), gui = 'italic'}, -- Boolean
-    sym"@float"             {fg = hsl('#f0f0f0')}, -- Float
-    sym"@function"          {fg = hsl('#00abff')}, -- Function
-    sym"@function.builtin"  {fg = hsl('#ff0000')}, -- Special
-    sym"@function.macro"    {fg = hsl('#ff0000')}, -- Macro
-    sym"@parameter"         {fg = hsl('#00ffff')}, -- Identifier
-    sym"@method"            {fg = hsl('#f0f0f0')}, -- Function
-    sym"@field"             {fg = hsl('#00abff')}, -- Identifier
-    sym"@property"          {fg = hsl('#00abff')}, -- Identifier
-    sym"@constructor"       {fg = hsl('#ffff00')}, -- Special
-    sym"@conditional"       {fg = hsl('#ff00ff')}, -- Conditional
-    sym"@repeat"            {fg = hsl('#ffff00')}, -- Repeat
-    sym"@label"             {fg = hsl('#ffff00')}, -- Label
-    sym"@operator"          {fg = hsl('#ffff00')}, -- Operator
-    sym"@keyword"           {fg = hsl('#ff00ff')}, -- Keyword
-    sym"@exception"         {fg = hsl('#ffff00')}, -- Exception
-    sym"@variable"          {fg = hsl('#cfcfcf')}, -- Identifier
-    sym"@type"              {fg = hsl('#00ff00')}, -- Type
-    sym"@type.definition"   {fg = hsl('#00ff00')}, -- Typedef
-    sym"@storageclass"      {fg = hsl('#00ff00')}, -- StorageClass
-    -- sym"@structure"         { }, -- Structure
-    sym"@namespace"         {fg = hsl('#00abff')}, -- Identifier
-    sym"@include"           {fg = hsl('#ff0000')}, -- Include
-    sym"@preproc"           {fg = hsl('#ff0000')}, -- PreProc
-    sym"@debug"             {fg = hsl('#ffab00')}, -- Debug
-    sym"@tag"               {fg = hsl('#00abff')}, -- Tag
+    sym"@punctuation"       {fg = hsl('#cd0000')}, -- Delimiter
+    sym"@constant"          {fg = hsl('#cd00cd')}, -- Constant
+    sym"@constant.builtin"  {fg = hsl('#cd0000')}, -- Special
+    sym"@constant.macro"    {fg = hsl('#cd0000')}, -- Define
+    sym"@define"            {fg = hsl('#cd0000')}, -- Define
+    sym"@macro"             {fg = hsl('#cd0000')}, -- Macro
+    sym"@string"            {fg = hsl('#cd00cd')}, -- String
+    sym"@string.escape"     {fg = hsl('#cd0000')}, -- SpecialChar
+    sym"@string.special"    {fg = hsl('#cd00cd')}, -- SpecialChar
+    sym"@character"         {fg = hsl('#e5e5e5')}, -- Character
+    sym"@character.special" {fg = hsl('#cdcd00') }, -- SpecialChar
+    sym"@number"            {fg = hsl('#e5e5e5')}, -- Number
+    sym"@boolean"           {fg = hsl('#00cdcd'), gui = 'italic'}, -- Boolean
+    sym"@float"             {fg = hsl('#e5e5e5')}, -- Float
+    sym"@function"          {fg = hsl('#00cdcd')}, -- Function
+    sym"@function.builtin"  {fg = hsl('#cd0000')}, -- Special
+    sym"@function.macro"    {fg = hsl('#cd0000')}, -- Macro
+    sym"@parameter"         {fg = hsl('#00cdcd')}, -- Identifier
+    sym"@method"            {fg = hsl('#e5e5e5')}, -- Function
+    sym"@field"             {fg = hsl('#00cdcd')}, -- Identifier
+    sym"@property"          {fg = hsl('#00cdcd')}, -- Identifier
+    sym"@constructor"       {fg = hsl('#cdcd00')}, -- Special
+    sym"@conditional"       {fg = hsl('#cd00cd')}, -- Conditional
+    sym"@repeat"            {fg = hsl('#cdcd00')}, -- Repeat
+    sym"@label"             {fg = hsl('#cdcd00')}, -- Label
+    sym"@operator"          {fg = hsl('#cdcd00')}, -- Operator
+    sym"@keyword"           {fg = hsl('#cd00cd')}, -- Keyword
+    sym"@exception"         {fg = hsl('#cdcd00')}, -- Exception
+    sym"@variable"          {fg = hsl('#cd00cd')}, -- Identifier
+    sym"@type"              {fg = hsl('#00cd00')}, -- Type
+    sym"@type.definition"   {fg = hsl('#00cd00')}, -- Typedef
+    sym"@storageclass"      {fg = hsl('#00cd00')}, -- StorageClass
+    sym"@structure"         {fg = hsl('#00cdcd')}, -- Structure
+    sym"@namespace"         {fg = hsl('#00cdcd')}, -- Identifier
+    sym"@include"           {fg = hsl('#cd0000')}, -- Include
+    sym"@preproc"           {fg = hsl('#cd0000')}, -- PreProc
+    sym"@debug"             {fg = hsl('#cdcd00')}, -- Debug
+    sym"@tag"               {fg = hsl('#00cdcd')}, -- Tag
 }
 end)
 
